@@ -15,8 +15,6 @@ This project is intended to showcase practical implementation of mobile app deve
 
 Learn and implement Android app development using Java and XML
 
-Integrate Firebase Authentication for user login (OTP-based)
-
 Perform CRUD (Create, Read, Update, Delete) operations using Firebase
 
 Simulate a remote toll payment workflow
@@ -24,9 +22,6 @@ Simulate a remote toll payment workflow
 Understand real-world mobile app architecture and data handling
 
 🔑 Key Features
-
-OTP-based mobile number authentication
-
 Firebase-powered user and toll data management
 
 CRUD operations for toll booking and payment records
@@ -72,8 +67,6 @@ The payment flow exists only to demonstrate how a toll payment system might func
 📚 Learning Outcomes
 
 Hands-on experience with Firebase backend services
-
-Understanding OTP-based authentication flows
 
 Practical exposure to Android UI development
 
