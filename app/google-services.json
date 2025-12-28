@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "240919815135",
+    "project_id": "tollpays-3e36f",
+    "storage_bucket": "tollpays-3e36f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:240919815135:android:7bbbac1b1e3401058f1a6a",
+        "android_client_info": {
+          "package_name": "com.example.tollpay"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSfYKYbHlWE0gBQrerNoYSig74YxWXHPs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

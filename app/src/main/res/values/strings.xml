@@ -1,0 +1,60 @@
+<!-- res/values/strings.xml -->
+<resources>
+    <string name="app_name">Toll Pay</string>
+
+    <!-- Intro Activity Strings -->
+    <string name="intro_feature1">Register your vehicle easily in our app and enjoy the facility of paying toll online.</string>
+    <string name="intro_feature2">The secure payment feature in the Toll pay app ensures that users can conveniently and safely complete their toll transactions.</string>
+    <string name="intro_feature3">The Toll pay app will be equipped with FASTag integration, a convenient and efficient way for users to make toll payments in further updates.</string>
+
+    <!-- Button Text -->
+    <string name="next_button">Next</string>
+    <string name="prev_button">Prev</string>
+    <string name="login_button">Login</string>
+
+    <!-- Accessibility Descriptions -->
+    <string name="intro_image">Introductory Feature Image</string>
+    <string name="app_logo">Your App Logo</string>
+    <string name="bell_icon">Notifications</string>
+    <string name="navigation_icon">Navigation Menu</string>
+
+    <!-- Profile Completion Text -->
+    <string name="profile_completion_hint">Complete your profile</string>
+
+    <!-- Other Strings -->
+    <string name="welcome_message">Welcome to the app!</string>
+    <string name="my_profile">My Profile</string>
+    <string name="change_payment_method">Change Payment Method</string>
+    <string name="terms_and_conditions">Terms and Conditions</string>
+    <string name="about_us">About Us</string>
+    <string name="home">Home</string>
+    <string name="logout">Log Out</string>
+    <string-array name="bank_names">
+        <item>Bank_of_Baroda_Users</item>
+        <item>Canara_Bank_Users</item>
+        <item>State_Bank_of_India_Users</item>
+    </string-array>
+    <string-array name="vehicle_types">
+        <item>Car</item>
+        <item>Travelling_Vehicle</item>
+        <item>TransPort_Vehicle</item>
+    </string-array>
+    <string name="select_toll_plaza">Select Toll Plaza</string>
+    <string name="enter_vehicle_rc_book_number">Enter Vehicle RC Book Number</string>
+    <string name="select_toll_amount">Select Toll Amount</string>
+    <string name="proceed_to_payment">Proceed to Payment</string>
+
+    <!-- Toast Messages -->
+    <string name="vehicle_not_found">Vehicle not found</string>
+    <string name="please_fill_all_fields">Please fill in all fields</string>
+    <string name="error_checking_vehicle">Error checking vehicle</string>
+    <string name="data_stored_successfully">Data stored successfully</string>
+    <string name="failed_to_store_data">Failed to store data</string>
+    <string name="form_submitted_successfully">Form submitted successfully</string>
+    <string name="please_enter_vehicle_rc_book_number">Please enter Vehicle RC Book Number</string>
+
+    <!-- Log Tags -->
+    <string name="epay_activity_tag">EpayActivity</string>
+    <string name="toll_pay_activity_tag">TollPayActivity</string>
+
+</resources>

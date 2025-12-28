@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#41B5E0"
+    android:padding="24dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Title at Center Top -->
+        <TextView
+            android:id="@+id/profileTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment Section"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="16dp" />
+
+        <!-- Label for RC Book Number -->
+        <TextView
+            android:id="@+id/rcBookLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vehicle Number"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/profileTitle"
+            android:layout_marginTop="32dp" />
+
+        <!-- RC Book Number Field -->
+        <EditText
+            android:id="@+id/rcBookField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Vehicle Number"
+            android:layout_below="@id/rcBookLabel"
+            android:layout_marginTop="4dp"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext"
+            android:textColor="#000000" />
+
+        <!-- Account Holder Name Label -->
+        <TextView
+            android:id="@+id/accountNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-PAY User Name"
+            android:visibility="gone"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/rcBookField"
+            android:layout_marginTop="16dp" />
+
+        <!-- Account Holder Name Field -->
+        <EditText
+            android:id="@+id/accountNameField"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            android:hint="Enter Username as in E-PAY"
+            android:layout_below="@id/accountNameLabel"
+            android:layout_marginTop="8dp"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext"
+            android:textColor="#000000" />
+
+        <!-- PIN Field -->
+        <TextView
+            android:id="@+id/pinField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PIN"
+            android:visibility="gone"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/accountNameField"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/EpinField"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            android:hint="Enter PIN"
+            android:layout_below="@id/pinField"
+            android:layout_marginTop="8dp"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext"
+            android:textColor="#000000" />
+
+        <!-- Buttons: Clear and Verify -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/EpinField"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/clearButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#FF0000"
+                android:onClick="onClearClicked"
+                android:text="Clear"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/verifyButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#080341"
+                android:onClick="onVerifyClicked"
+                android:text="Verify"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/NameVerifyButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#49B321"
+                android:onClick="onVerifyClicked"
+                android:text="Verify E-Pay"
+                android:visibility="gone"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#49B321"
+                android:onClick="onVerifyClicked"
+                android:text="Submit"
+                android:visibility="gone"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

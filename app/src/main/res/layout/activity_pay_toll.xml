@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#41B5E0"
+    android:padding="24dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Title at Center Top -->
+        <TextView
+            android:id="@+id/tollPayTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toll Payment"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="16dp" />
+
+        <!-- Toll Plaza Dropdown Label -->
+        <TextView
+            android:id="@+id/tollPlazaLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Toll Plaza"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/tollPayTitle"
+            android:layout_marginTop="32dp" />
+
+        <!-- Toll Plaza Spinner -->
+        <Spinner
+            android:id="@+id/tollPlazaSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tollPlazaLabel"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/rounded_edittext"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:spinnerMode="dropdown" />
+
+        <!-- Vehicle Dropdown Label -->
+        <TextView
+            android:id="@+id/vehicleLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Vehicle"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/tollPlazaSpinner"
+            android:layout_marginTop="32dp" />
+
+        <!-- Vehicle Spinner -->
+        <Spinner
+            android:id="@+id/vehicleSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vehicleLabel"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/rounded_edittext"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:spinnerMode="dropdown" />
+
+        <!-- Toll Fee Display -->
+        <TextView
+            android:id="@+id/tollFeeDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Toll Amount: ₹0"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/vehicleSpinner"
+            android:layout_marginTop="16dp" />
+
+        <!-- Proceed Button -->
+        <Button
+            android:id="@+id/proceedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tollFeeDisplay"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#49B321"
+            android:text="Proceed to Payment"
+            android:textColor="#FFFFFF" />
+
+    </RelativeLayout>
+</ScrollView>

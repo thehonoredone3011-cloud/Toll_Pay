@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#41B5E0"
+    android:padding="24dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Title at Center Top -->
+        <TextView
+            android:id="@+id/profileTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Complete your Vehicle Profile"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="16dp" />
+
+        <!-- Label for RC Book Number -->
+        <TextView
+            android:id="@+id/rcBookLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RC Book Number"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/profileTitle"
+            android:layout_marginTop="32dp" />
+
+        <!-- RC Book Number Field -->
+        <EditText
+            android:id="@+id/rcBookField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter RC Book Number"
+            android:layout_below="@id/rcBookLabel"
+            android:layout_marginTop="4dp"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext"
+            android:textColor="#000000" />
+
+        <!-- Label for Vehicle Fastag -->
+        <TextView
+            android:id="@+id/fastagLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vehicle Fastag"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/rcBookField"
+            android:layout_marginTop="16dp" />
+
+        <!-- Vehicle Fastag Checkbox -->
+        <CheckBox
+            android:id="@+id/fastagCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fastag Enabled"
+            android:layout_below="@id/fastagLabel"
+            android:layout_marginTop="4dp"
+            android:textColor="#FFFFFF" />
+
+        <!-- Label for Vehicle Name -->
+        <TextView
+            android:id="@+id/vehicleNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vehicle Name"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/fastagCheckbox"
+            android:layout_marginTop="16dp" />
+
+        <!-- Vehicle Name Field -->
+        <EditText
+            android:id="@+id/vehicleNameField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Vehicle Name"
+            android:layout_below="@id/vehicleNameLabel"
+            android:layout_marginTop="4dp"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext"
+            android:textColor="#000000" />
+
+        <!-- Label for Vehicle Number -->
+        <TextView
+            android:id="@+id/vehicleNumberLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vehicle Number"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/vehicleNameField"
+            android:layout_marginTop="16dp" />
+
+        <!-- Vehicle Number Field -->
+        <EditText
+            android:id="@+id/vehicleNumberField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Vehicle Number"
+            android:layout_below="@id/vehicleNumberLabel"
+            android:layout_marginTop="4dp"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext"
+            android:textColor="#000000" />
+
+        <!-- Label for Vehicle Owner -->
+        <TextView
+            android:id="@+id/vehicleOwnerLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vehicle Owner"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/vehicleNumberField"
+            android:layout_marginTop="16dp" />
+
+        <!-- Vehicle Owner Field -->
+        <EditText
+            android:id="@+id/vehicleOwnerField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Vehicle Owner's Name"
+            android:layout_below="@id/vehicleOwnerLabel"
+            android:layout_marginTop="4dp"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext"
+            android:textColor="#000000" />
+
+        <!-- Label for Vehicle Type -->
+        <TextView
+            android:id="@+id/vehicleTypeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vehicle Type"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/vehicleOwnerField"
+            android:layout_marginTop="16dp" />
+
+        <!-- Vehicle Type Dropdown (Spinner) -->
+        <Spinner
+            android:id="@+id/vehicleTypeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vehicleTypeLabel"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/rounded_edittext"
+            android:padding="12dp"
+            android:spinnerMode="dropdown"
+            android:entries="@array/vehicle_types" />
+
+
+        <!-- Buttons: Clear and Verify -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vehicleTypeSpinner"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/clearButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#FF0000"
+                android:onClick="onClearClicked"
+                android:text="Clear"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/verifyButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#080341"
+                android:onClick="onVerifyClicked"
+                android:text="Verify"
+                android:textColor="#FFFFFF" />
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#49B321"
+                android:onClick="onVerifyClicked"
+                android:text="Submit"
+                android:visibility="gone"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

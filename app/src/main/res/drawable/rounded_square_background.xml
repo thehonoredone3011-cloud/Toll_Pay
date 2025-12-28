@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Rounded Square Background -->
+    <solid android:color="#FFFFFF" /> <!-- Replace with your preferred color -->
+
+    <!-- Corner Radius for Rounded Effect -->
+    <corners android:radius="16dp" /> <!-- Adjust as needed for desired rounding -->
+
+    <!-- Optional Shadow Effect (for elevation) -->
+    <padding android:left="8dp" android:top="8dp" android:right="8dp" android:bottom="8dp" />
+</shape>
